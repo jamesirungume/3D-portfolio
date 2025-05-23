@@ -65,6 +65,7 @@ const Contact = () => {
   };
 
   return (
+    <div id='Contact'>
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
@@ -129,6 +130,7 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+    </div>
     </div>
   );
 };

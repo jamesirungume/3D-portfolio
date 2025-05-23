@@ -53,7 +53,20 @@ function Home() {
           </button>
         </div>
       </div>
-     
+      <div className='scrollContent'>
+        {/* <div id='About'>
+          <About />
+        </div>
+        <div id='Experience'>
+          <Experience/>
+        </div>
+        <div id='Work'>
+          <Works />
+        </div>
+        <div id='Contact'>
+          <Contact />
+        </div> */}
+      </div>
     </div>
   );
 }
