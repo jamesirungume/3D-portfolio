@@ -1,102 +1,49 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
-import { navLinks } from "../constants";
-import {  menu, close } from "../assets";
-import logo from "../assets/bff3254df1cf22ed74923aaa65bc2a08.jpg";
+import React, { useState } from 'react'
+// import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
+import {FaBars,FaTimes} from 'react-icons/fa'
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  const [click,setClick] = useState(false)
+  function handleClick() {
+    setClick(!click)
+  }
   return (
-    <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
-    >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
-          className='flex items-center gap-2'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Ephrahim &nbsp;
-            <span className='sm:block hidden'> | Coding Mastery</span>
-          </p>
-        </Link>
+    <>
+      <div className='pitchBlack'>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
-        </ul>
-
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
-            onClick={() => setToggle(!toggle)}
-          />
-
-          <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-          >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-              {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
       </div>
-    </nav>
+      <div className="logo">
+        {/* <h1>Sound Off</h1> */}
+      </div>
+      <ul className={click?'nav-links active':'nav-links'}>
+        
+       
+        <li>
+        <Link to="Work" smooth={true} duration={500}>Work</Link>
+        </li>
+        <li>
+        <Link to="Contact" smooth={true} duration={500}>Contact</Link>
+        </li>
+        <li>
+        <Link to="About" smooth={true} duration={500}>About</Link>
+        </li>
+        
+        <li>
+        <Link to="Experience" smooth={true} duration={500}>Experience</Link>
+        </li>
+        <li>
+          <a href="https://www.canva.com/design/DAFz-7CTshQ/mXJycZbSmzI7OErNbwKwcQ/view?utm_content=DAFz-7CTshQ&utm_campaign=designshare&utm_medium=link&utm_source=editor">
+        <button className="btton" >Resume</button>
+        </a>
+        </li>
+      </ul>
+      <div className='hamburger' onClick={handleClick}>
+        {click ? (<FaTimes size ={40} style={{color:'white'}}/>):(  <FaBars size={40} style={{color:'#fff'}}/>)}
+      </div>
+
+   </>
   );
 };
 
