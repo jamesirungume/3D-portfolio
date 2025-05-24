@@ -36,6 +36,7 @@ import {
   import Cloth from "../assets/company/Cloth.png";
   import Home from "../assets/company/Home.png";
   import HOMEB from "../assets/company/home.2b5a4a85.jpg";
+  import HireGroove from "../assets/company/HireGroove.png";
 
   export const navLinks = [
     {
@@ -221,6 +222,7 @@ import {
       ],
       image: Home,
       source_code_link: "https://jamesirungu.free.nf/?i=1",
+      website_link: "https://jamesirungu.free.nf/?i=1", // ✅ Add this
     },
      {
       name: "Project Tracker",
@@ -246,6 +248,7 @@ import {
       ],
       image: carrent,
       source_code_link: "https://github.com/arnold-aswan/project-tracker-frontend",
+      website_link: "https://project-tracker-frontend-six.vercel.app/", // ✅ Add this
     },
     {
       name: "FitBuddy +",
@@ -266,6 +269,7 @@ import {
       ],
       image: HOMEB ,
       source_code_link: "https://github.com/jamesirungume/Fit_budddy",
+      website_link: "https://hawamariah.github.io/Fit-Buddy/", // ✅ Add this
     },
      {
       name: "Hire Groove Backend",
@@ -287,8 +291,9 @@ import {
           color: "blue-text-gradient",
         },
       ],
-      image: carrent,
+      image: HireGroove,
       source_code_link: "https://github.com/jamesirungume/Hire_Grove_backend/tree/main",
+      website_link: "https://dashboard.render.com/web/srv-ckfj2984sbec73cofldg", // ✅ Add this
     },
 
   ];
