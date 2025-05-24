@@ -16,7 +16,7 @@ const Tech = () => {
                 </h2>
         <div className="border-b-2 border-gray-300 w-20 mx-auto mt-1 mb-6"></div>
 
-        <div className="space-y-3 text-gray-700 text-base text-left sm:text-center px-4">
+        <div className="space-y-3 text-gray-200 text-base text-left sm:text-center px-4">
           <p>1. <strong>WordPress:</strong> Custom themes & plugins, Elementor, WooCommerce, Yoast SEO. Backend customization, CMS features, and integrations (Mailchimp, Facebook Pixel, Google Ads).</p>
           <p>2. <strong>JavaScript</strong> – Libraries: React, React Native,Typescript</p>
           <p>3. <strong>Python</strong> – Framework: Django,Flask</p>

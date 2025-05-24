@@ -34,6 +34,8 @@ import {
   import React from "../assets/company/React.png";
   import Mysql from "../assets/company/Mysql.jpeg";
   import Cloth from "../assets/company/Cloth.png";
+  import Home from "../assets/company/Home.png";
+  import HOMEB from "../assets/company/home.2b5a4a85.jpg";
 
   export const navLinks = [
     {
@@ -203,7 +205,24 @@ import {
   ];
   
   const projects = [
+    
+    
+    
     {
+      name: "GikombaNet(Wordpress site)",
+      description:
+        "An e-commerce website built with WordPress for shopping quality thrift clothes and footwear from various stores nationwide.", 
+      tags: [
+        {
+          name: "Wordpress Theme(Astra)",
+          color: "blue-text-gradient",
+        },
+        
+      ],
+      image: Home,
+      source_code_link: "https://jamesirungu.free.nf/?i=1",
+    },
+     {
       name: "Project Tracker",
       description:
         "Web-based platform that allows programmers to keep track of their projects and different cohorts in order to make it easier for them.",
@@ -229,56 +248,49 @@ import {
       source_code_link: "https://github.com/arnold-aswan/project-tracker-frontend",
     },
     {
-      name: "ChatWave",
+      name: "FitBuddy +",
       description:
-        "Web application that enables users to have a chat.note:Currently under maintainance",
+        "A fitness app that helps users track their workouts, nutrition, and progress towards their fitness goals.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
+        
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
+          name: "Bootstrap",
           color: "pink-text-gradient",
         },
+        
+       
+      ],
+      image: HOMEB ,
+      source_code_link: "https://github.com/jamesirungume/Fit_budddy",
+    },
+     {
+      name: "Hire Groove Backend",
+      description:
+        "A job platform connecting web developers, UI/UX designers, and other tech professionals with freelance and full-time roles.",
+      tags: [
+        
+        {
+          name: "mySQL",
+          color: "green-text-gradient",
+        },
+        
         {
           name: "flask",
           color: "pink-text-gradient",
         },
         {
-          name: "socetio",
-          color: "green-text-gradient",
-        },
-      ],
-
-      image: jobit,
-      source_code_link: "https://github.com/EphrahimLaanyu123/Chatwave-project",
-    },
-    {
-      name: "Portfolio",
-      description:
-        "A comprehensive look on my services and how my clients to easily contact.",
-      tags: [
-        {
-          name: "Reactjs",
+          name: "JWT authorization",
           color: "blue-text-gradient",
         },
-        {
-          name: "tailwind",
-          color: "green-text-gradient",
-        },
-        {
-          name: "three",
-          color: "pink-text-gradient",
-        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/EphrahimLaanyu123/portfolio",
+      image: carrent,
+      source_code_link: "https://github.com/jamesirungume/Hire_Grove_backend/tree/main",
     },
+
   ];
   
   export { services, technologies, experiences, testimonials, projects };
