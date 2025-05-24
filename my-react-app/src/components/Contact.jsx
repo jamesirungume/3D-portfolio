@@ -33,8 +33,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_fb2vx9p',
-        'template_pu7eff1',
+        'service_u12zzbx',
+        'template_1sn3n1t',
         {
           from_name: form.name,
           to_name: "JavaScript Mastery",
@@ -42,7 +42,7 @@ const Contact = () => {
           to_email: "elaanyu@gmail.com",
           message: form.message,
         },
-        'x-E3iB2oglnWz4XmL'
+        'ZCTib-Pz_W0y4AS42'
       )
       .then(
         () => {
