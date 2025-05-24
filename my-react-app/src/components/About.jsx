@@ -40,19 +40,21 @@ const About = () => {
     <div id='About'>
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        
+        <h2 className={styles.sectionHeadText}>About me</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-"I am an adept software developer proficient in JavaScript, React, Python, MySQL, and Flask. 
-With a strong foundation in these technologies, I specialize in crafting efficient, scalable, 
-and user-friendly solutions. As a quick learner, I thrive on collaborating closely with clients 
-to bring their ideas to fruition and address real-world challenges effectively. Let's collaborate 
-to transform your concepts into reality!"
+"Hi, I'm James, a passionate full-stack developer who loves building creative and user-friendly web applications. I enjoy turning ideas into real digital experiences that look great and work smoothly.
+
+I’m always learning and keeping up with the latest trends in web development. I work well with others and value teamwork—many of my projects have involved great collaboration and communication.
+
+I have experience with tools and technologies like WordPress, React.js, JavaScript, Django, Flask, and Firebase, as well as logo design and other CMS platforms.
+
+I'm excited to take on new challenges and connect with professionals or employers who want to build meaningful web solutions together."
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

@@ -30,7 +30,11 @@ import {
   import carrent from "../assets/Screenshot from 2024-02-20 08-44-38.png";
   import jobit from "../assets/Screenshot from 2024-02-20 08-57-21.png";
   import tripguide from "../assets/Screenshot from 2024-02-20 09-22-04.png";
-  
+  import Wordpress from "../assets/company/Wordpress.png";
+  import React from "../assets/company/React.png";
+  import Mysql from "../assets/company/Mysql.jpeg";
+  import Cloth from "../assets/company/Cloth.png";
+
   export const navLinks = [
     {
       id: "about",
@@ -48,21 +52,17 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "Wordpress Developer",
+      icon: Wordpress,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
+      title: "Frontend dev(reactJ,typescript)",
+      icon: React    },
     {
-      title: "Backend Developer",
+      title: "Backend Developer(Django,Flask & other backend CMS)",
       icon: backend,
     },
-    {
-      title: "Flask Developer",
-      icon: web,
-    },
+   
   ];
   
   const technologies = [
@@ -122,20 +122,25 @@ import {
   
   const experiences = [
     {
-      title: "Back-end Developer",
-      company_name: "Project Tracker",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "Oct 2023 - Nov 2023",
-      points: [
-        "Developing and maintaining web applications back-end using Flask and mySQL and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      ],
-    },
+  title: "WordPress & Digital Marketing Specialist",
+  company_name: "Upwork",
+  icon: Wordpress,
+  iconBg: "#383E56",
+  date: "Oct 2023 - Present",
+  points: [
+    "Developing custom WordPress themes and plugins tailored to client needs.",
+    "Designing and managing responsive, SEO-friendly websites using Elementor and WPBakery.",
+    "Integrating social media platforms like Instagram and Facebook for seamless user engagement.",
+    "Creating and managing paid advertising campaigns on Facebook and Instagram to drive traffic and conversions.",
+    "Collaborating with clients to create content strategies and optimize marketing performance.",
+    "Monitoring site analytics and ad performance to refine strategies and deliver measurable results."
+  ],
+},
+
     {
-      title: "React JS Developer",
-      company_name: "Project Tracker",
-      icon: starbucks,
+      title: "React JS Developer ",
+      company_name: "Nairobi Digital Hub INTERNSIP",
+      icon: React,
       iconBg: "#E6DEDD",
       date: "Oct 2023 - Nov 2023",
       points: [
@@ -147,8 +152,8 @@ import {
     },
     {
       title: "Full stack developer",
-      company_name: "ChatWave",
-      icon: meta,
+      company_name: "Freelance In Patel Buisness",
+      icon: Cloth,
       iconBg: "#383E56",
       date: "Sept 2022 - Oct 2023",
       points: [
@@ -158,16 +163,14 @@ import {
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Portfolio",
-      icon: logo,
+      title: "Backend Developer",
+      company_name: "Hire Groove Personal website",
+      icon: Mysql,
       iconBg: "#E6DEDD",
       date: "Jan 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "This is meant to bring my clients and poeple who are interested in my services closer to me and get a feel of what I do.",
-        "ALso shows a wide range of services I can offer.",
-        "Hvaing a contact page enables the clients to easily contact me via email.",
+         "Developing and maintaining web applications back-end using Flask and mySQL and other related technologies.",
+        
       ],
     },
   ];
