@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 // import { Link } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import {FaBars,FaTimes} from 'react-icons/fa'
+import './Home.css'
+
 
 const Navbar = () => {
   const [click,setClick] = useState(false)
